@@ -1,15 +1,15 @@
 /* Break Points */
-$mobile-bp: 600px;
-$tablet-bp: 768px;
-$laptop-bp: 1280px;
-$max-bp: 1600px;
+$mobile-bp: 340px;
+$tablet-bp: 788px;
+$laptop-bp: 1011px;
+$max-bp: 1012px;
 
 /* Variables for Media Queries*/
-$mobile-mq: 601px;
+$mobile-mq: 320px;
 $tablet-mq: 768px;
 $ipad-mq: 1023px;
-$laptop-mq: 1279px;
-$max-mq: 1599px;
+$laptop-mq: 992px;
+$max-mq: 1012px;
 
 $mobile: "only screen and (max-width:#{$mobile-mq})";
 $tablet: "only screen and (max-width:#{$tablet-mq})";
@@ -25,4 +25,4 @@ $laptop-only: "only screen and (min-width:#{$ipad-mq}) and (max-width:#{$laptop-
 $max-only: "only screen and (min-width:#{$laptop-mq}) and (max-width:#{$max-mq})";
 
 
-@import '_grid-breakpoints.scss';
+// @import '_grid-breakpoints.scss';

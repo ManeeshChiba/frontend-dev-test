@@ -7,4 +7,5 @@ $images: "../img/";
 $fonts: "../fonts/";
 
 //Globals
-$font-stack: 'Open Sans', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic);
+$font-stack: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;

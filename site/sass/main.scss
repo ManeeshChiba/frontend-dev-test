@@ -1,6 +1,8 @@
 @import 'mixins/_generic.normalize.scss';
 @import 'partials/_h5bp.scss';
 @import 'partials/_variables.scss';
-@import 'mixins/_grid-config.scss';
+@import 'mixins/_boostrap-grid.scss';
 
 @import 'partials/_typography.scss';
+
+.test-grid {display: block; height: 300px; background: blue;}
