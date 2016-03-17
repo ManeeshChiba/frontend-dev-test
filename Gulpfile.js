@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 var paths = {
-    projectName:'NATIV VML Test',
+    projectName:'NATIVE VML Test',
     sassFiles: 'site/sass/**/*.scss',
     cssFolder:'site/css/',
     baseDirectory: 'site/'
