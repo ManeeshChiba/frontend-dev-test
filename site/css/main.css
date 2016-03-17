@@ -1524,8 +1524,8 @@ html, body {
 }
 
 .cssgradients body {
-  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #40666f 90%);
-  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #40666f 90%);
+  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
+  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
 }
 
 .no-cssgradients body {
