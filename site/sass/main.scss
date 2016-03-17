@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic);
 @import 'mixins/_generic.normalize.scss';
 @import 'partials/_h5bp.scss';
 @import 'partials/_variables.scss';
@@ -6,3 +7,15 @@
 @import 'partials/_typography.scss';
 
 .test-grid {display: block; height: 300px; background: blue;}
+
+html,body {height: 100%;}
+
+//Page Styles
+.cssgradients {
+	body {background: radial-gradient(ellipse farthest-corner at 100% 0%, $bg-light 0%, $bg-dark 90%);}	
+}
+.no-cssgradients {
+	body {background: url('#{$images}page-background.jpg'); background-repeat: no-repeat; background-size: cover; }	
+}
+
+

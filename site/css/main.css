@@ -1,10 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1376,7 +1376,7 @@ textarea {
 body, button, input, select, textarea {
   font: 100%/1.5 "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
   *font-size: 1em;
-  color: #000;
+  color: #ebeff0;
 }
 
 p, blockquote, q, pre, address, hr, code, samp, dl, table, fieldset, menu {
@@ -1388,15 +1388,15 @@ p, blockquote, q, pre, address, hr, code, samp, dl, table, fieldset, menu {
 /* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
 p, a {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #000;
+  color: #ebeff0;
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
 
@@ -1408,7 +1408,7 @@ h1 {
 
 /* 60px / 72px */
 h2 {
-  font-size: 3em;
+  font-size: 2.32em;
   line-height: 1em;
   margin-bottom: 0.5em;
 }
@@ -1422,12 +1422,12 @@ h3 {
 
 /* 36px / 48px */
 h4 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em;
+  font-size: 1.3125em;
+  line-height: 1.1428571428571428571428571428571em;
+  margin-bottom: 1.1428571428571428571428571428571em;
 }
 
-/* 24px / 24px */
+/* 21px / 24px */
 h5 {
   font-size: 1.3125em;
   line-height: 1.1428571428571428571428571428571em;
@@ -1464,7 +1464,7 @@ p a {
   transition: all ease 250ms;
 }
 p a:hover {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #91eebc;
 }
 
 /* LISTS */
@@ -1476,7 +1476,7 @@ ul, ol {
 /* HYPERLINKS */
 a {
   text-decoration: none;
-  color: red;
+  color: #91eebc;
 }
 
 a:hover {
@@ -1517,4 +1517,19 @@ svg:not(:root) {
   display: block;
   height: 300px;
   background: blue;
+}
+
+html, body {
+  height: 100%;
+}
+
+.cssgradients body {
+  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #40666f 90%);
+  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #40666f 90%);
+}
+
+.no-cssgradients body {
+  background: url("../img/page-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
