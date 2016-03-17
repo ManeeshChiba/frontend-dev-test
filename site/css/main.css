@@ -1521,6 +1521,11 @@ svg:not(:root) {
   background: blue;
 }
 
+* {
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
+}
+
 button {
   display: inline-block;
   border: 1px solid #97acba;
@@ -1729,7 +1734,7 @@ h4 {
   color: #4491b5;
 }
 
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   header {
     padding-top: 5em;
   }
@@ -1780,7 +1785,7 @@ h4 {
   #event-list li {
     display: inline-block;
     margin: 0 3% 1em;
-    width: 29%;
+    width: 28%;
     font-size: 0;
   }
   #event-list li:first-of-type {
@@ -1843,8 +1848,10 @@ h4 {
 
   .task-block {
     margin: 1em 0 0;
-    text-align: right p;
-    text-align-margin-bottom: 0.15em;
+    text-align: right;
+  }
+  .task-block p {
+    margin-bottom: 0.15em;
   }
   .task-block .label {
     color: #97acba;
