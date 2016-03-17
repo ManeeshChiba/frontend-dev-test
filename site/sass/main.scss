@@ -18,4 +18,16 @@ html,body {height: 100%;}
 	body {background: url('#{$images}page-background.jpg'); background-repeat: no-repeat; background-size: cover; }	
 }
 
+//Header
+header {padding: 1em 0;
+	.container {border-bottom: 2px solid $faded-blue;}
+}
+#logo {
+	h1 {margin: 0; line-height: 1; padding: 0 0 0.5em;
+		img, svg {max-width: 50px;}
+	}
+}
+
+h4 { font-size: 93%; color: $faded-blue; margin-bottom: 0.5em;}
+#user-name { font-size: 1.875em; margin-bottom: 0.5em;}
 

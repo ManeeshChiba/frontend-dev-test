@@ -453,6 +453,8 @@ textarea {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 .container {
+  min-width: 320px;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1532,4 +1534,31 @@ html, body {
   background: url("../img/page-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header {
+  padding: 1em 0;
+}
+header .container {
+  border-bottom: 2px solid #97acba;
+}
+
+#logo h1 {
+  margin: 0;
+  line-height: 1;
+  padding: 0 0 0.5em;
+}
+#logo h1 img, #logo h1 svg {
+  max-width: 50px;
+}
+
+h4 {
+  font-size: 93%;
+  color: #97acba;
+  margin-bottom: 0.5em;
+}
+
+#user-name {
+  font-size: 1.875em;
+  margin-bottom: 0.5em;
 }
