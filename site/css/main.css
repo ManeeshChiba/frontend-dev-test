@@ -453,7 +453,7 @@ textarea {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 .container {
-  min-width: 320px;
+  min-width: 300px;
   width: 95%;
   margin-right: auto;
   margin-left: auto;
@@ -1526,7 +1526,7 @@ button {
   border: 1px solid #97acba;
   background: transparent;
   color: #ebeff0;
-  padding: 0.75em 0.75em;
+  padding: 0.75em 1.75em;
   border-radius: 0;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
@@ -1541,15 +1541,16 @@ button:hover {
   color: #fff;
 }
 
-.cssgradients body {
-  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
-  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
+section {
+  padding: 1em 0 0;
 }
 
-.no-cssgradients body {
+body {
   background: url("../img/page-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
+  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
 }
 
 header {
@@ -1577,10 +1578,6 @@ h4 {
 #user-name {
   font-size: 1.875em;
   margin-bottom: 0.5em;
-}
-
-section {
-  padding: 1em 0 0;
 }
 
 #time {
@@ -1641,6 +1638,7 @@ section {
 .month-selector {
   overflow: hidden;
   max-height: 55px;
+  margin-left: -408px;
 }
 .month-selector .selector-conatiner {
   width: 100%;
@@ -1661,6 +1659,12 @@ section {
   text-transform: uppercase;
   margin: 1em 1em 2em;
   color: #ebeff0;
+  -webkit-transition: all ease 250ms;
+  transition: all ease 250ms;
+}
+.month-selector .selector-conatiner .selector-wrapper li a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .month-selector .selector-conatiner .selector-wrapper li .active {
   -webkit-transform: scale(1.6);
@@ -1668,6 +1672,11 @@ section {
   -webkit-transform-origin: auto;
           transform-origin: auto;
   border-bottom: 3px solid #91eebc;
+}
+.month-selector .selector-conatiner .selector-wrapper li .active:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  cursor: default;
 }
 
 #task-info-container {
@@ -1718,4 +1727,137 @@ section {
 }
 .task-block#outstanding .count {
   color: #4491b5;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding-top: 5em;
+  }
+
+  h4 {
+    font-size: 100%;
+  }
+
+  section {
+    padding: 1.5em 0;
+  }
+  section:last-of-type {
+    padding-bottom: 6em;
+  }
+
+  #logo {
+    float: right;
+    text-align: right;
+  }
+
+  #date-time:after {
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: -webkit-calc(100% - 1.6em);
+    height: calc(100% - 1.6em);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #91eebc;
+  }
+
+  #date {
+    margin-bottom: 0;
+  }
+
+  #time {
+    font-size: 4em;
+  }
+
+  #events button, #tasks button {
+    width: auto;
+  }
+
+  #event-list {
+    text-align: left;
+  }
+  #event-list li {
+    display: inline-block;
+    margin: 0 3% 1em;
+    width: 29%;
+    font-size: 0;
+  }
+  #event-list li:first-of-type {
+    margin: 0 3% 1em 0;
+  }
+  #event-list li:last-of-type {
+    margin: 0 0 1em 3%;
+  }
+  #event-list li > div {
+    font-size: 16px;
+  }
+  #event-list .time {
+    padding-bottom: 0.75em;
+    margin-bottom: 1.2em;
+    display: inline-block;
+    max-width: 100%;
+    margin-right: 0;
+    float: left;
+    font-size: 20px;
+  }
+  #event-list .event-info {
+    width: 100%;
+    float: left;
+  }
+  #event-list .event-title {
+    margin-top: 0.05em;
+    margin-bottom: 0.75em;
+  }
+
+  #task-info-container .task-title {
+    padding: 0;
+    font-size: 1.2em;
+  }
+  #task-info-container .task-title:before {
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100%;
+    position: absolute;
+    top: 0.5em;
+    left: -0.75em;
+  }
+  #task-info-container .task-details {
+    padding: 0;
+    font-size: 80%;
+    max-width: 500px;
+  }
+  #task-info-container .task-info[data-task-state="outstanding"] .task-title:before {
+    background: #4491b5;
+  }
+  #task-info-container .task-info[data-task-state="complete"] .task-title:before {
+    background: #91eebc;
+  }
+
+  #task-status {
+    text-align: right;
+    margin-top: 3.5em;
+  }
+
+  .task-block {
+    margin: 1em 0 0;
+    text-align: right p;
+    text-align-margin-bottom: 0.15em;
+  }
+  .task-block .label {
+    color: #97acba;
+    font-size: 145%;
+  }
+  .task-block .count {
+    margin-bottom: 0;
+    font-size: 300%;
+  }
+  .task-block#complete .count {
+    color: #91eebc;
+  }
+  .task-block#outstanding .count {
+    color: #4491b5;
+  }
 }
