@@ -1515,15 +1515,17 @@ svg:not(:root) {
 }
 
 /* Correct IE9 overflow */
-.test-grid {
-  display: block;
-  height: 300px;
-  background: blue;
-}
-
 * {
   -webkit-transition: all ease 150ms;
   transition: all ease 150ms;
+}
+
+body {
+  background: url("../img/page-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
+  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
 }
 
 button {
@@ -1550,12 +1552,14 @@ section {
   padding: 1em 0 0;
 }
 
-body {
-  background: url("../img/page-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: -webkit-radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
-  background: radial-gradient(ellipse farthest-corner at 100% 0%, #7f97a7 0%, #44667c 90%);
+h4 {
+  font-size: 93%;
+  color: #97acba;
+  margin-bottom: 0.5em;
+}
+
+#events button, #tasks button {
+  width: 100%;
 }
 
 header {
@@ -1572,12 +1576,6 @@ header .container {
 }
 #logo h1 img, #logo h1 svg {
   max-width: 50px;
-}
-
-h4 {
-  font-size: 93%;
-  color: #97acba;
-  margin-bottom: 0.5em;
 }
 
 #user-name {
@@ -1630,10 +1628,6 @@ h4 {
 }
 #event-list .event-details {
   font-size: 70%;
-}
-
-#events button, #tasks button {
-  width: 100%;
 }
 
 #tasks {
