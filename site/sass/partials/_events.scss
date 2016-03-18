@@ -1,6 +1,6 @@
 //Events
 #event-list {list-style-type: none; display: inline-block; margin-bottom: 0; width: 100%;
-	li {display: block; margin-bottom: 1em;
+	li {display: block; margin-bottom: 1em; vertical-align: top;
 		&:last-of-type {margin-bottom: 0;}
 		&:after {content: ''; width: 100%; display: block; clear: both;}
 	}

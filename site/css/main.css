@@ -464,6 +464,11 @@ textarea {
     width: 768px;
   }
 }
+@media (width: 768px) {
+  .container {
+    width: 748px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     width: 992px;
@@ -1602,6 +1607,7 @@ header .container {
 #event-list li {
   display: block;
   margin-bottom: 1em;
+  vertical-align: top;
 }
 #event-list li:last-of-type {
   margin-bottom: 0;

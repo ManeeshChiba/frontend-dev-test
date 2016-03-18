@@ -20,10 +20,14 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 @media (min-width: $tablet-mq) {
   .container {
-    width: $tablet-mq;
+    width: ($tablet-mq);
+  }
+}
+@media (width: $tablet-mq) {
+  .container {
+    width: ($tablet-mq - 20px);
   }
 }
 @media (min-width: $desktop-mq) {
