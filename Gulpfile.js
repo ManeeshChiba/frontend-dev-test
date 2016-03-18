@@ -41,7 +41,7 @@ gulp.task('compile-styles', function() {
     .pipe(autoprefixer({browsers:['Android > 4', 'Chrome > 35', 'Firefox > 35', 'Explorer > 10', 'iOS > 4', 'Opera > 25', 'Safari > 8', 'OperaMobile > 12', 'ChromeAndroid > 30', 'FirefoxAndroid > 30', 'ExplorerMobile > 10'],cascade: true})) //Adds vendor prefixes
     .pipe(gulp.dest(paths.cssFolder)) //Outputs to project folder
     .pipe(rename({suffix: '.min'})) //Adds minification to filename
-    .pipe(cssnano()) //Minifies CSS
+    .pipe(cssnano({discardComments: {removeAll: true}})) //Minifies CSS
     .pipe(gulp.dest(paths.cssFolder)) //Outsputs to dist directory
     .pipe(notify({ message: 'Sass generated for '+paths.projectName })); //Notification that task is complete
 });
